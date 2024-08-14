@@ -6,7 +6,7 @@ export const Projects = () => {
 return (
     <div className={styles.project}>
       <div className={styles.projectslide}>
-        <img className={styles.projectslideimage} src="./public/assets/projectAssets/weatherlite.jpg" alt="weatherlite"></img>
+        <img className={styles.projectslideimage} src="./assets/projectAssets/weatherlite.jpg" alt="weatherlite"></img>
           <div className={styles.slideheader}>
             <h2>WeatherLite</h2>
           </div>
@@ -36,7 +36,7 @@ return (
           </div>
       </div> */}
       <div className={styles.projectslide}>
-        <img className={styles.projectslideimage} src="./public/assets/projectAssets/discmanhattan.jpg" alt="weatherlite"></img>
+        <img className={styles.projectslideimage} src="./assets/projectAssets/discmanhattan.jpg" alt="weatherlite"></img>
           <div className={styles.slideheader}>
             <h2>Disc. Manhattan</h2>
           </div>
