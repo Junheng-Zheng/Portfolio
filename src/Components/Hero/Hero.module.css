@@ -27,7 +27,7 @@
 }
 
 .herocontact:hover{
-    width: 11.5%;
+    transform: scale(1.1);
     background-color: white;
     color:#AA64A9;
 }
@@ -114,6 +114,12 @@ p{
         font-size: 21px;
     }
 
+    .herocontact:hover{
+        transform: scale(1);
+        background-color: #AA64A9;
+        color:white;
+    }
+
     .heroinformation{
         gap:28px;
         padding-top:50%;
@@ -159,7 +165,7 @@ p{
         font-size: 18px;
         width:35%;
     }
-
+    
     .heroinformation{
         gap:22px;
     }
