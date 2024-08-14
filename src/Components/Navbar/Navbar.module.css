@@ -1,0 +1,117 @@
+.navbar{
+    z-index: 2;
+}
+
+.navbarfixed{
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    top:0;
+    position: fixed;
+    margin-top:40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    height:50px;
+    width:90%;
+    padding:20px;
+    border-radius: 20px;
+}
+.navbarmenu{
+    display: flex;
+    gap:40px;
+    font-size: 15px;
+}
+.navbarhamburgercheckbox{
+    display: none;
+}
+
+.navbaricon{
+    background-color: #AA64A9;
+    padding:4px;
+    border-radius: 20px;
+    font-size: 12px;
+    border: white .75px solid;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    transition: all 1.2s ease;
+}
+
+
+@media screen and (max-width:800px){
+    
+    .navbarmenu{
+        text-align: right;
+        padding:20px;
+        border-radius: 20px;
+        border-top-right-radius: 0;
+        margin-top: 25%;
+        display: none;
+        flex-direction: column;
+        gap:4px;
+        background-color: black;
+    }
+
+    .navbarhamburgerbutton {
+        margin-right:6%;
+        right:0;
+        z-index: 3;
+        display: block;
+        background: none; 
+        border: none;
+        padding: 0;
+        cursor: pointer; 
+        position:absolute;
+    }
+
+    .navbarhamburgercheckbox{
+        opacity: 0 ;
+        transform: scale(1.5);
+    }
+
+    .navbarhamburgercheckbox:checked ~ .navbarhamburgerbutton + .navbarmenu {
+        display: flex;
+    }
+
+    .navbarhamburgerbutton .navbarhamburger .navbarhamburgerstroke {
+        transition: all 0.3s ease-in-out;
+        transform: rotateY(0deg) rotate(0deg); /* Default state */
+    }
+
+    .navbarhamburgercheckbox:checked ~ .navbarhamburgerbutton .navbarhamburger .navbarhamburgerstroke {
+        transition: all .3s ease-in-out;
+        transform: rotateY(0deg) rotate(20deg);
+    }
+
+    .navbarhamburger{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+    }
+
+    .navbarhamburgerstroke{
+        background-color: white;
+        padding-left:9px;
+        padding-top: 1px;
+        padding-bottom:1px;
+        padding-right:9px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .navbarmenu{
+        margin-top: 50%;
+    }
+    .navbarfixed{
+        margin-top:50px;
+    }
+}

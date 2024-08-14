@@ -1,0 +1,165 @@
+.heroinformation {
+    display: flex;
+    flex-direction: column;
+    gap:28px;
+    background:
+    linear-gradient(to bottom, transparent, transparent, black),
+    /* radial-gradient(farthest-corner circle at 100% 100%, #ff00e1e0 -90%, #0a0a0a 46%, transparent), */
+    radial-gradient(farthest-corner circle at 100% 90%, #02c4ffa8 -100%, #0a0a0a 46%, transparent),
+    radial-gradient(farthest-corner circle at 0px 0px, #AA64A9 0%, rgb(0, 0, 0) 100%);
+    padding-top:10%;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+
+.herocontact{
+    text-align: center;
+    width:11%;
+    padding:10px;
+    font-size:23px; 
+    display: inline-block;
+    background-color: #AA64A9;
+    color:white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.herocontact:hover{
+    width: 11.5%;
+    background-color: white;
+    color:#AA64A9;
+}
+
+h2{
+    margin-top:4%;
+    color:white;
+    font-size: 5.2em;
+    font-weight:500;
+}
+
+p{  
+    color:white;
+    font-size:30px;
+}
+
+
+.heroscroll{
+    width:66px;
+    padding-bottom: 5%;
+    margin-left: auto;
+}
+
+.heroprofile{
+    z-index: 1;
+    width:30%;
+}
+
+
+@media screen and (max-width:1024px){
+    h2{
+        margin-top:8%;
+        font-size: 4em;
+    }
+
+    .herocontact{
+        width:13%;
+    }
+}
+
+@media screen and (max-width:800px){
+    h2{
+        margin-top:10%;
+        font-size: 4em;
+    }
+
+    p{  
+        font-size:23px;
+    }
+
+    .herocontact{
+        width:17%;
+        font-size:18px;
+    }
+
+}
+@media screen and (max-width:450px){
+    .heroinformation{
+        background:
+        linear-gradient(to bottom, transparent, transparent, black),
+        /* radial-gradient(farthest-corner circle at 100% 100%, #ff00e1e0 -90%, #0a0a0a 46%, transparent), */
+        radial-gradient(farthest-corner circle at 100% 90%, #02c4ffa8 -60%, #0a0a0a 46%, transparent),
+        radial-gradient(farthest-corner circle at 0px 0px, #AA64A9 0%, rgb(0, 0, 0) 100%);
+    }
+    h2{
+        margin-top: 0%;
+        font-size: 3.2em;
+    }
+
+    p{  
+        font-size:22px;
+    }
+
+    .heroscroll{
+        margin-top:18%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .herocontact{
+        margin-left: auto;
+        margin-right: auto;
+        width:32%;
+        font-size: 21px;
+    }
+
+    .heroinformation{
+        gap:28px;
+        padding-top:50%;
+        padding-bottom:8%;
+        text-align: center;
+    }
+
+    .heroprofile{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:400px){
+    h2{
+        font-size: 2.65em;
+    }
+
+    p{
+        font-size:19.5px;
+    }
+
+    .herocontact{
+        font-size: 19.5px;
+    }
+
+    .heroinformation{
+        gap:26px;
+    }
+}
+
+@media screen and (max-width:350px){
+    h2{
+        font-size: 2.45em;
+    }
+
+    p{
+        font-size:18px;
+    }
+
+    .herocontact{
+        font-size: 18px;
+        width:35%;
+    }
+
+    .heroinformation{
+        gap:22px;
+    }
+}
