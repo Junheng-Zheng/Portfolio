@@ -133,15 +133,16 @@ p{
     }
 
     p{
-        font-size:19.5px;
+        font-size:20px;
     }
 
     .herocontact{
-        font-size: 19.5px;
+        font-size: 21px;
+        width:40%;
     }
 
     .heroinformation{
-        gap:26px;
+        gap:28px;
     }
 }
 
