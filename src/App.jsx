@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <section id="hero">
         <Hero />
-      </section>
+      </section>  
       <section id="about">
         <About />
       </section>
